@@ -3,7 +3,7 @@ import { createHeaderEl, createMainEl, createFooterEl } from './util.js';
 /* initApp */
 const body = document.body;
 
-async function initApp() {
+(async function () {
 	try {
 		const headerEl = await createHeaderEl();
 		const mainEl = await createMainEl();
@@ -15,6 +15,4 @@ async function initApp() {
 	} catch (err) {
 		console.log(err);
 	}
-}
-
-initApp();
+})();
